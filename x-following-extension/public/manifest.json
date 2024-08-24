@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "X.com Following Scraper",
+    "version": "1.0",
+    "description": "Scrape your following list from X.com and capture screenshots of your posts.",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "tabs"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "index.html"
+    },
+    "host_permissions": [
+      "*://*.x.com/*",
+      "*://*.twitter.com/*"
+    ]
+  }
+  
